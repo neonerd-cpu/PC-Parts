@@ -1,52 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Storage</title>
-<link rel="stylesheet" href="style.css">
-<meta name = "viewport" content = width = device-width, intial-scale = 20">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage - PC Parts Store</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>Storage</h1>
-</header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cpu.html">CPUs</a></li>
+            <li><a href="gpu.html">GPUs</a></li>
+            <li><a href="ram.html">RAM</a></li>
+            <li><a href="storage.html" class="active">Storage</a></li>
+        </ul>
+    </nav>
 
+    <main>
+        <h1>Storage Drives</h1>
+        <p class="intro">Lightning-fast SSDs and high-capacity HDDs for all your data</p>
 
-<nav>
-<a href="index.html">Home</a>
-<a href="cpu.html">CPU</a>
-<a href="gpu.html">GPU</a>
-<a href="ram.html">RAM</a>
-<a href="storage.html">Storage</a>
-</nav>
+        <h2>NVMe SSDs (Fastest)</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Samsung 990 PRO</h3>
+                <p><strong>Capacity:</strong> 2TB</p>
+                <p><strong>Interface:</strong> PCIe 4.0 NVMe</p>
+                <p><strong>Read Speed:</strong> 7,450 MB/s</p>
+                <p><strong>Write Speed:</strong> 6,900 MB/s</p>
+                <p class="price">$159</p>
+                <button>Add to Cart</button>
+            </div>
 
+            <div class="card">
+                <h3>WD Black SN850X</h3>
+                <p><strong>Capacity:</strong> 2TB</p>
+                <p><strong>Interface:</strong> PCIe 4.0 NVMe</p>
+                <p><strong>Read Speed:</strong> 7,300 MB/s</p>
+                <p><strong>Write Speed:</strong> 6,600 MB/s</p>
+                <p class="price">$149</p>
+                <button>Add to Cart</button>
+            </div>
 
-<main class = "blur">
-<p>Storage devices are used to save data permanently, including the operating system, software, and personal files.</p>
+            <div class="card">
+                <h3>Crucial T700</h3>
+                <p><strong>Capacity:</strong> 2TB</p>
+                <p><strong>Interface:</strong> PCIe 5.0 NVMe</p>
+                <p><strong>Read Speed:</strong> 12,400 MB/s</p>
+                <p><strong>Write Speed:</strong> 11,800 MB/s</p>
+                <p class="price">$279</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
 
+        <h2>SATA SSDs (Affordable)</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Samsung 870 EVO</h3>
+                <p><strong>Capacity:</strong> 1TB</p>
+                <p><strong>Interface:</strong> SATA III</p>
+                <p><strong>Read Speed:</strong> 560 MB/s</p>
+                <p><strong>Write Speed:</strong> 530 MB/s</p>
+                <p class="price">$79</p>
+                <button>Add to Cart</button>
+            </div>
 
-<h3>Types of Storage</h3>
-<ul>
-<li>HDD (Hard Disk Drive)</li>
-<li>SSD (Solid State Drive)</li>
-<li>NVMe SSD</li>
-</ul>
+            <div class="card">
+                <h3>Crucial MX500</h3>
+                <p><strong>Capacity:</strong> 2TB</p>
+                <p><strong>Interface:</strong> SATA III</p>
+                <p><strong>Read Speed:</strong> 560 MB/s</p>
+                <p><strong>Write Speed:</strong> 510 MB/s</p>
+                <p class="price">$129</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
 
+        <h2>Hard Drives (High Capacity)</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Seagate BarraCuda</h3>
+                <p><strong>Capacity:</strong> 4TB</p>
+                <p><strong>Interface:</strong> SATA III</p>
+                <p><strong>RPM:</strong> 5400</p>
+                <p><strong>Cache:</strong> 256MB</p>
+                <p class="price">$89</p>
+                <button>Add to Cart</button>
+            </div>
 
-<h3>Why SSDs are Better</h3>
-<p>SSDs are faster, quieter, and more reliable than HDDs.</p>
+            <div class="card">
+                <h3>WD Blue</h3>
+                <p><strong>Capacity:</strong> 8TB</p>
+                <p><strong>Interface:</strong> SATA III</p>
+                <p><strong>RPM:</strong> 5640</p>
+                <p><strong>Cache:</strong> 256MB</p>
+                <p class="price">$159</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
 
+        <section>
+            <h2>Storage Comparison</h2>
+            <div class="card">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Speed</th>
+                            <th>Price/GB</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>PCIe 5.0 NVMe</td>
+                            <td>12,000+ MB/s</td>
+                            <td>High</td>
+                            <td>Extreme performance, professional work</td>
+                        </tr>
+                        <tr>
+                            <td>PCIe 4.0 NVMe</td>
+                            <td>7,000 MB/s</td>
+                            <td>Medium</td>
+                            <td>Gaming, OS drive, everyday use</td>
+                        </tr>
+                        <tr>
+                            <td>SATA SSD</td>
+                            <td>550 MB/s</td>
+                            <td>Low-Medium</td>
+                            <td>Budget builds, secondary storage</td>
+                        </tr>
+                        <tr>
+                            <td>HDD</td>
+                            <td>150 MB/s</td>
+                            <td>Very Low</td>
+                            <td>Mass storage, backups, archives</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-<h3>Buy Storage</h3>
-<p>
-<a href="https://www.amazon.in/s?k=ssd" target="_blank">SSDs on Amazon</a><br>
-<a href="https://www.amazon.in/s?k=hard+disk" target="_blank">Hard Drives on Amazon</a>
-</p>
-</main>
+                <h3>Recommended Setup:</h3>
+                <ul>
+                    <li><strong>Primary Drive:</strong> 1-2TB NVMe SSD for OS and programs</li>
+                    <li><strong>Secondary Drive:</strong> 2-4TB SATA SSD for games</li>
+                    <li><strong>Storage Drive:</strong> 4-8TB HDD for media and backups</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 
-
-<footer>
-<pre>contact us : abc@gmail.com
-call us @ 1234567890</pre>
-</footer>
+    <footer>
+        <p>&copy; 2024 PC Parts Store. All rights reserved.</p>
+    </footer>
 </body>
 </html>
