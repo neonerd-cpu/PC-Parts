@@ -1,45 +1,79 @@
-<!Doctype HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name = "viewport" context = width = device-width, intial-scale = 20">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Parts Store - Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-<h1>PC Parts Guide</h1>
-<p>Learn the basics of computer components</p>
-<nav>
-<a href="index.html">Home</a>
-<a href="cpu.html">CPU</a>
-<a href="gpu.html">GPU</a>
-<a href="ram.html">RAM</a>
-<a href="storage.html">Storage</a>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="cpu.html">CPUs</a></li>
+            <li><a href="gpu.html">GPUs</a></li>
+            <li><a href="ram.html">RAM</a></li>
+            <li><a href="storage.html">Storage</a></li>
+        </ul>
+    </nav>
 
+    <main>
+        <section class="hero">
+            <h1>Welcome to PC Parts Store</h1>
+            <p>Build your dream PC with the best components</p>
+            <button onclick="window.location.href='cpu.html'">Start Building</button>
+        </section>
 
-<main id = "box1">
-<h2>Welcome</h2>
-<p>A PC (Personal Computer) is an electronic device used to process data, perform calculations, and run software applications. PCs are commonly used for education, office work, entertainment, programming, gaming, and internet browsing.</p>
+        <section>
+            <h2>Featured Categories</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🔧 Processors (CPUs)</h3>
+                    <p>High-performance processors from Intel and AMD for gaming and productivity</p>
+                    <button onclick="window.location.href='cpu.html'">View CPUs</button>
+                </div>
 
+                <div class="card">
+                    <h3>🎮 Graphics Cards (GPUs)</h3>
+                    <p>Powerful graphics cards for gaming, rendering, and AI workloads</p>
+                    <button onclick="window.location.href='gpu.html'">View GPUs</button>
+                </div>
 
-<h3>Main Parts of a PC</h3>
-<p>A computer is made up of several important hardware components. Each part has a specific role and works together to make the system function properly.</p>
+                <div class="card">
+                    <h3>💾 Memory (RAM)</h3>
+                    <p>Fast and reliable RAM modules for smooth multitasking</p>
+                    <button onclick="window.location.href='ram.html'">View RAM</button>
+                </div>
 
+                <div class="card">
+                    <h3>💿 Storage Drives</h3>
+                    <p>SSDs and HDDs with massive capacity and lightning-fast speeds</p>
+                    <button onclick="window.location.href='storage.html'">View Storage</button>
+                </div>
+            </div>
+        </section>
 
-<ul>
-<li><strong>CPU:</strong> Processes instructions and controls all operations.</li>
-<li><strong>GPU:</strong> Handles graphics, video, and display output.</li>
-<li><strong>RAM:</strong> Temporarily stores data for fast access.</li>
-<li><strong>Storage:</strong> Saves data permanently such as files and software.</li>
-</ul>
+        <section>
+            <h2>Why Choose Us?</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>✓ Best Prices</h3>
+                    <p>Competitive pricing on all components</p>
+                </div>
+                <div class="card">
+                    <h3>✓ Fast Shipping</h3>
+                    <p>Quick delivery to your doorstep</p>
+                </div>
+                <div class="card">
+                    <h3>✓ Expert Support</h3>
+                    <p>24/7 customer service for all your needs</p>
+                </div>
+            </div>
+        </section>
+    </main>
 
-
-<h3>Purpose of This Website</h3>
-<p>This website provides simple and easy-to-understand information about basic PC components. It is designed for beginners and students who want to learn computer hardware fundamentals.</p>
-</main>
-
-
-<footer>
-</footer>
+    <footer>
+        <p>&copy; 2024 PC Parts Store. All rights reserved.</p>
+    </footer>
 </body>
 </html>
